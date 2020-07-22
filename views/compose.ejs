@@ -1,0 +1,17 @@
+
+<%- include("partials/header"); -%>
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <label>Title <span class="text-info">(word limit:50)</span></label>
+            <input class="form-control" type="text" name="postTitle" maxlength="50">
+        <label>Category <span class="text-info">(word limit:50)</span></label>
+            <input class="form-control" type="text" name="postCategory" maxlength="50">
+        <label>Post</label>
+            <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+        <button class="btn btn-primary" type="submit" name="button">Publish</button>
+      </div>
+
+    </form>
+
+<%- include("partials/footer"); -%>

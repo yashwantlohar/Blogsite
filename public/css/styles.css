@@ -1,0 +1,122 @@
+html {
+  min-height: 100%;
+  position: relative;
+
+}
+body{
+    background-color: #f4f6ff;
+    font-family: 'Montserrat', sans-serif;
+}
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 1.5rem;
+    font-size: 12px;
+    letter-spacing: 5px;
+    opacity: 95%;
+    background-color: #5b93ca;
+    width: 100%;
+}
+
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+.nav-link{
+    color: grey;
+}
+
+.row{
+    display: inline-block;
+    margin: 8px;
+}
+.card{
+    width:60rem;
+    padding: 0 10px;
+    border-radius: 10px;
+    margin: 25px;
+    position: relative;
+}
+.card:hover{
+    border-color: #5b93ca;
+    transition: transform 250ms ease-in ;
+    transform: scale(1.05);
+}
+.card:hover::after{
+    transform: scale(1);
+    transition: transform 250 ease-in;
+}
+.fancy-link{
+    position: relative;
+}
+.fancy-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: grey;
+    transform-origin: right;
+    transform: scaleX(0);
+
+    transition: transform 250ms ease-in;
+}
+.fancy-link:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+p{
+    margin-left: 10px;
+}
+
+.fab,.fas{
+    margin: 10px 10px 5px 10px;
+    color: #1180bc;
+}
+.footer-padding {
+	padding: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	background-color: #5b93ca;
+    bottom: 0;
+}
+label{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+.btn{
+    margin: 15px auto ;
+}
+.form-group{
+    margin: 40px;
+}
+.form-control{
+    margin-left: 15px;
+}
+.next-button{
+    margin-left: 72%;
+}
+.footer .fas,.fab{
+    color: black;
+}
+.switch-prev-page{
+    margin-left: 0;
+}
+.switch-next-page{
+    margin-right: 0;
+}
