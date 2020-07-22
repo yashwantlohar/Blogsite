@@ -4,11 +4,11 @@
     <form class="" action="/compose" method="post">
       <div class="form-group">
         <label>Title <span class="text-info">(word limit:50)</span></label>
-            <input class="form-control" type="text" name="postTitle" maxlength="50">
+            <input class="form-control" type="text" name="postTitle" maxlength="50" required autocomplete="off">
         <label>Category <span class="text-info">(word limit:50)</span></label>
-            <input class="form-control" type="text" name="postCategory" maxlength="50">
+            <input class="form-control" type="text" name="postCategory" maxlength="50" required  autocomplete="off">
         <label>Post</label>
-            <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+            <textarea class="form-control" name="postBody" rows="5" cols="30" required ></textarea>
         <button class="btn btn-primary" type="submit" name="button">Publish</button>
       </div>
 
