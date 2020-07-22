@@ -12,7 +12,6 @@ body{
     padding-bottom: 70px;
 }
 .navbar {
-
     border: 0;
     border-radius: 0;
     margin-bottom: 1.5rem;
@@ -32,10 +31,12 @@ body{
 
 .row{
     display: inline-block;
+    align-items: center;
     margin: 8px;
+    width: 100%;
 }
 .card{
-    width:60rem;
+    width:100%;
     padding: 0 10px;
     border-radius: 10px;
     margin: 25px;
@@ -114,9 +115,16 @@ label{
 .footer .fas,.fab{
     color: black;
 }
-.switch-prev-page{
-    margin-left: 0;
+.next-button{
+    margin-left: auto;
 }
-.switch-next-page{
-    margin-right: 0;
+
+@media (max-width:560px) {
+    .card{
+        width:80%;
+        padding: 0 10px;
+        border-radius: 10px;
+        margin: 25px;
+        position: relative;
+    }
 }
