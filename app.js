@@ -1,13 +1,13 @@
 //jshint esversion:6
-
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require('mongoose');
 const _ = require("lodash");
 
-mongoose.connect("mongodb+srv://admin-yashwant:yash2108@cluster0.ewdsu.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true})
-
+mongoose.connect(process.env.MONGODATABASE, {useNewUrlParser: true, useUnifiedTopology: true})
+ 
 const postSchema={
     title:String,
     category:String,
