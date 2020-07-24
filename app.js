@@ -6,7 +6,7 @@ const ejs = require("ejs");
 const mongoose = require('mongoose');
 const _ = require("lodash");
 
-mongoose.connect(process.env.MONGODATABASE, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://admin-yashwant:yash2108@cluster0.ewdsu.mongodb.net/blogDB", {useNewUrlParser: true, useUnifiedTopology: true})
 
 const postSchema={
     title:String,
@@ -37,7 +37,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/home", function(req, res){
-  res.redirect("/");    
+  res.redirect("/");
 });
 
 
