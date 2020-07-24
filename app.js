@@ -1,4 +1,5 @@
 //jshint esversion:6
+const dotenv=require("dotenv");
 require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -27,7 +28,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect(process.env.MONGODATABASE,{useNewUrlParser:true,useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-yashwant:yash2108@cluster0.ewdsu.mongodb.net/blogDB",{useNewUrlParser:true,useUnifiedTopology: true});
 mongoose.set('useCreateIndex', true);
 
 const postSchema= new mongoose.Schema({
@@ -195,23 +196,13 @@ app.post("/login",function (req,res) {
 
 });
 
-
-
-
-
-
-
-
 app.get("/logout",function (req,res) {
     req.logout();
     res.redirect("/");
 });
 
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
-app.listen(port, function() {
+
+app.listen(process.env.PORT||3000, function() {
   console.log("Server has started successfully");
 });
