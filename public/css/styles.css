@@ -3,9 +3,14 @@ html {
   position: relative;
 
 }
-body{
-    background-color: #f4f6ff;
-    font-family: 'Montserrat', sans-serif;
+body {
+  background-color: #E8ECEF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
 }
 .container-fluid {
     padding-top: 70px;
@@ -27,6 +32,7 @@ body{
 }
 .nav-link{
     color: grey;
+    padding: 0;
 }
 
 .row{
@@ -73,7 +79,7 @@ body{
 }
 
 p{
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .fab,.fas{
@@ -103,11 +109,12 @@ label{
 .btn{
     margin: 15px auto ;
 }
-.form-group{
-    margin: 40px;
+.compose-form{
+    padding: 30px;
 }
 .form-control{
     margin-left: 15px;
+    width: 80%;
 }
 .next-button{
     margin-left: 72%;

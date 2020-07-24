@@ -8,9 +8,12 @@
 
         <div class="card">
             <div class="card-body">
-                <div style="display:inline-block;">
+                <div >
+                    <div class="" style="display:inline-block;">
+                        <a href="/posts/<%=post._id%>" class="h2 text-dark card-title nav-link fancy-link" ><%=post.title%></a>
+                    </div>
 
-                    <a href="/posts/<%=post._id%>" class="h2 text-dark card-title nav-link fancy-link" ><%=post.title%></a>
+                    <p class="float-right float-bottom"><%=post.createdby%></p>
                 </div>
                 <h6 class="card-subtitle mb-2 text-muted"><%=post.category%></h6>
                 <p class="card-text">

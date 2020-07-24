@@ -1,7 +1,10 @@
 <%- include("partials/header"); -%>
 
-  <h1><%=title%></h1>
-  <h6><%=category%></h6>
+ <div class="">
+     <h1 class="text-dark card-title"><%=title%></h1>
+     <h6 class="float-right">-<%=createdby%></h6>
+ </div>
+  <h6 class="card-subtitle mb-2 text-muted"><%=category%></h6>
   <p><%=content%></p>
 
 <%- include("partials/footer"); -%>
